@@ -1,0 +1,149 @@
+.App {
+  text-align: center;
+}
+
+.nav-div {
+  height: 10vh;
+}
+
+.main-home {
+  height: 80vh;
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+/* .container div {
+  padding: 2%;
+} */
+
+.cont-title {
+  padding-left: 10% !important;
+  width: 55%;
+  font-family: 'Nunito', sans-serif;
+}
+
+.cont-image {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+  /* align-items: center; */
+}
+
+.hi-text {
+  font-size: 60px;
+}
+
+.divider {
+  background-color: #CABBE9;
+  height: 5%;
+  padding: 0%;
+  border-radius: 15px;
+  width: 70%;
+}
+
+.presnt-text {
+  /* margin-top: 2%; */
+  font-size: 40px;
+  background-color: #E9E8E8;
+  padding: 2%;
+  border-radius: 10px;
+}
+
+.web-dev {
+  font-size: 100px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.self-img {
+  width: 350px;
+  height: 350px;
+  background-color: #c1c1c1;
+  border-radius: 50%;
+
+}
+
+/* #E9E8E8 */
+
+.frosted-glass {
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  backdrop-filter: blur(10px);
+}
+
+/* body {
+  background: white;
+  background-image: radial-gradient(rgb(213, 213, 213) 1px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -19px -19px;
+} */
+
+/* body {
+
+  background: linear-gradient(300deg,#ffffff,#dfcdff,#5b06ef);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+
+} */
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.div-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  /* background-color: #CABBE9; */
+  width: 30%;
+  padding: 10px;
+  border-radius: 5px;
+  /* box-shadow: 1px 3px 12px 0px rgba(130,130,130,0.75);
+  -webkit-box-shadow: 1px 3px 12px 0px rgba(130,130,130,0.75);
+  -moz-box-shadow: 1px 3px 12px 0px rgba(130,130,130,0.75);
+  backdrop-filter: blur(2px); */
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 20px;
+  color: black;
+  transition: all 0.4s linear;
+}
+
+.active-shadow {
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 1px 5px 0px rgba(150,150,150,0.75);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(150,150,150,0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(150,150,150,0.75);
+  backdrop-filter: blur(10px);
+  font-weight: 700 !important;
+
+}
