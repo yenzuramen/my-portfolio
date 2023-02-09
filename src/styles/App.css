@@ -14,7 +14,7 @@
 .container {
   display: flex;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 /* .container div {
@@ -24,9 +24,13 @@
 .cont-title {
   padding-left: 10% !important;
   width: 55%;
-  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Nunito', sans-serif; */
+  font-family: 'Inconsolata', monospace;
 }
-
+.name{
+    font-family: 'Nunito', sans-serif;
+    color: #b3a0d9;
+}
 .cont-image {
   width: 40%;
   display: flex;
@@ -54,6 +58,7 @@
   background-color: #E9E8E8;
   padding: 2%;
   border-radius: 10px;
+  backdrop-filter: blur(5px);
 }
 
 .web-dev {
@@ -73,12 +78,12 @@
 
 .frosted-glass {
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 
 /* body {
   background: white;
-  background-image: radial-gradient(rgb(213, 213, 213) 1px, transparent 0);
+  background-image: radial-gradient(rgb(234, 234, 234) 1px, transparent 0);
   background-size: 30px 30px;
   background-position: -19px -19px;
 } */
@@ -129,12 +134,27 @@
 
 .nav-menu a {
   text-decoration: none;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Inconsolata', monospace;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 20px;
   color: black;
   transition: all 0.4s linear;
+  backdrop-filter: blur(5px) !important;
+  background-color: #ffffff;
+}
+
+
+
+.nav-menu a:hover {
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 1px 5px 0px rgba(150,150,150,0.75);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(150,150,150,0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(150,150,150,0.75);
+  backdrop-filter: blur(10px);
+  font-weight: 700 !important;
+  background-color: #dcdcdc;
 }
 
 .active-shadow {
@@ -146,4 +166,45 @@
   backdrop-filter: blur(10px);
   font-weight: 700 !important;
 
+}
+
+.secnd-cont{
+  padding: auto;
+  font-size: 20px;
+  padding: 2%;
+  margin-top: 2%;
+  border: 2px solid #d0c5e4;
+  color: #3e2e5d;
+  border-radius: 10px;
+}
+
+
+
+.btn-contact-me{
+  font-size: 30px;
+  padding: 1%;
+  /* margin-left: 1%; */
+  border-radius: 10px;
+  /* border-width: 0px; */
+  font-family: 'Inconsolata', monospace;
+  font-weight: 500;
+  background-color: #d0c5e4;
+  color: #28264f;;
+  text-transform: uppercase;
+  margin-top: 2%;
+  border: 2px solid #9590e1;
+  margin-right: 0px;
+
+}
+
+/* /////// Skills Styles */
+
+.skill-mask{
+  width: 5%;
+  height: 5%;
+}
+.skill-mask img{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
