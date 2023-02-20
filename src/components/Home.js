@@ -1,8 +1,11 @@
 import React from 'react'
 import me from '../assets/images/me.PNG'
 import { FiArrowUpRight } from "react-icons/fi";
-import { FaReact, FaNodeJs, FaPhp, FaGit } from "react-icons/fa";
-import { SiExpress, SiJavascript, SiCss3, SiMongodb } from "react-icons/si";
+import { FaReact, FaNodeJs, FaPhp, FaGit, FaDatabase } from "react-icons/fa";
+import { SiExpress, SiJavascript, SiCss3, SiMongodb, } from "react-icons/si";
+import { SlScreenDesktop } from "react-icons/sl";
+import { GrTools } from "react-icons/gr";
+
 import { AiOutlineConsoleSql, AiFillHtml5, AiFillGithub } from "react-icons/ai";
 import { Skillcard } from './SkillCard';
 import { IconContext } from "react-icons";
@@ -29,6 +32,29 @@ export const Home = () => {
 
       </div>
       <div className='cont-skills'>
+
+        <div className='skills-tools'>
+          <div className="skills-tools-title">SKILLS + TOOLS</div>
+          <div className="skills-tools-txt">  These are some of my skills + tools I use :)</div>
+        </div>
+        <div className='skills-card'>
+          <div >FRONT END </div>
+          <div> <IconContext.Provider value={{ size: 70, color:"#78c6f0" }}>
+              <FaReact />
+              {/* <SiJavascript />
+              <AiFillHtml5 />
+              <SiCss3 />
+              <SiMongodb />
+              <FaNodeJs />
+              <SiExpress />
+              <AiOutlineConsoleSql />
+              <FaPhp />
+              <AiFillGithub />
+              <FaGit /> */}
+
+            </IconContext.Provider> </div>
+        </div>
+        <div>pop</div> 
         {/* <Skillcard /> */}
       </div>
       {/* <div className='line-grad-cont'>
@@ -37,11 +63,20 @@ export const Home = () => {
           
         </div>
       </div> */}
-      <div className="parent">
+      {/* <div className="parent">
         <div className="line"></div>
         <div className="child first">
           <div className='skill-mask'>
-            <IconContext.Provider value={{ size: 70, color: "#3e2e5d" }}>
+            <div className='skill-title'>
+              FrontEnd  <div><SlScreenDesktop /></div>
+            </div>
+            <div className='skill-title'>
+              BackEnd  <div><FaDatabase /></div>
+            </div>
+            <div className='skill-title'>
+              Other Tools  <div><GrTools /></div>
+            </div>
+             <IconContext.Provider value={{ size: 70 }}>
               <FaReact />
               <SiJavascript />
               <AiFillHtml5 />
@@ -54,7 +89,7 @@ export const Home = () => {
               <AiFillGithub />
               <FaGit />
 
-            </IconContext.Provider>
+            </IconContext.Provider> 
 
           </div>
         </div>
@@ -62,7 +97,7 @@ export const Home = () => {
         <div className="child third"></div>
 
       </div>
-      <div>pop</div>
+      <div>pop</div> */}
 
     </div>
   )

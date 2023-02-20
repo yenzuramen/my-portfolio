@@ -27,10 +27,10 @@
     height: 80%;
     /* float: left; */
     backdrop-filter: blur(20px);
-    border: 1px solid white;
-    box-shadow: 0px 0px 5px 0px rgba(175, 163, 175, 0.75);
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(175, 163, 175, 0.75);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(175, 163, 175, 0.75);
+    border: 1px solid rgb(245, 245, 245);
+    /* box-shadow: 0px 0px 2px 0px rgba(175, 163, 175, 0.75);
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(175, 163, 175, 0.75);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(175, 163, 175, 0.75); */
     border-radius: 10px;
 }
 
@@ -62,3 +62,43 @@
 .icono{
     height: 100px;
 }
+
+.skills-tools-title{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+}
+.skills-tools-txt{
+    font-family: 'Inconsolata', monospace;
+    font-size: 25px;
+}
+.skill-title{
+    display: flex;
+    /* font-family: 'Inconsolata', monospace; */
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.skills-tools{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+}
+.skills-card{
+    margin-top: 4%;
+        display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inconsolata', monospace;
+}
+
+.skills-card :first-child{
+
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-right: 2%;
+}
+ 

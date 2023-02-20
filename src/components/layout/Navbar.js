@@ -1,19 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 export const Navbar = () => {
+
+    const [activeItem, setActiveItem] = useState(null);
+
+    const handleNavClick = (e) => {
+        setActiveItem(e.target.name)
+    }
+
     return (
         <div className='div-nav'>
             <ul className='nav-menu'>
-                <li>
-                   <div> <NavLink to='/home' className={({ isActive }) => isActive ? 'active-shadow' : ''}>Home</NavLink>
-                    </div>
+                <li className={activeItem !== 'home-link' ? '' : 'active-shadow'} onClick={handleNavClick}>
+                    <NavLink name='home-link' to='/home'>Home</NavLink>
                 </li>
-                <li>
-                <div>  <NavLink to='/about-me' className={({ isActive }) => isActive ? 'active-shadow' : ''}>About me </NavLink></div>
+                <li className={activeItem !== 'about-me-link' ? '' : 'active-shadow'} onClick={handleNavClick}>
+                    <NavLink name='about-me-link' to='/about-me'>About me </NavLink>
                 </li>
-                <li>
-                    <NavLink to='/skills-projects' className={({ isActive }) => isActive ? 'active-shadow' : ''}>Skills and Projects</NavLink>
+                <li className={activeItem !== 'skills-projects-link' ? '' : 'active-shadow'} onClick={handleNavClick}>
+                    <NavLink name='skills-projects-link' to='/skills-projects'>Skills and Projects</NavLink>
                 </li>
             </ul>
         </div>
