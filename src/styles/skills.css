@@ -1,38 +1,3 @@
-/* .line-grad-cont{
-    height: 20%;
-}
-
-.line-grad {
-    position: absolute;
-    top: 900px;
-    width: 100%;
-    height: 50px;
-    background-image: linear-gradient(83deg,#1bef99,#2d8fec 17%,#2824ce 34%,#7811c9 52%,#e11abb 69%,#feaa07 85%,#f9d400);
-    opacity: .56;
-} */
-
-.parent {
-    position: relative;
-    height: 200px;
-    display: flex;
-    gap: 5%;
-    margin-top: 6%;
-    margin-bottom: 5%;
-    align-items: center;
-    justify-content: center;
-}
-
-.child {
-    width: 15%;
-    height: 80%;
-    /* float: left; */
-    backdrop-filter: blur(20px);
-    border: 1px solid rgb(245, 245, 245);
-    /* box-shadow: 0px 0px 2px 0px rgba(175, 163, 175, 0.75);
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(175, 163, 175, 0.75);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(175, 163, 175, 0.75); */
-    border-radius: 10px;
-}
 
 /* .first {
     background-color: blue;
@@ -46,7 +11,7 @@
     background-color: red;
   } */
 
-.line {
+/* .line {
     position: absolute;
     bottom: 30%;
     left: 0;
@@ -55,50 +20,129 @@
 
     z-index: -1;
     background-image: linear-gradient(83deg, #1bef99, #2d8fec 17%,
-     #2824ce 34%, #7811c9 52%, #e11abb 69%, #feaa07 85%, #f9d400);
+            #2824ce 34%, #7811c9 52%, #e11abb 69%, #feaa07 85%, #f9d400);
     opacity: .56;
 }
+ */
 
-.icono{
-    height: 100px;
-}
 
-.skills-tools-title{
+.skills-tools-title {
     font-family: 'Bebas Neue', cursive;
     font-size: 50px;
 }
-.skills-tools-txt{
+
+.skills-tools-txt {
     font-family: 'Inconsolata', monospace;
     font-size: 25px;
 }
-.skill-title{
+
+.cont-skills {
     display: flex;
-    /* font-family: 'Inconsolata', monospace; */
-    font-family: 'Bebas Neue', cursive;
-    text-transform: uppercase;
-    font-size: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.skills-tools{
+.skills-tools {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20vh;
+    margin-top: 10vh;
+    margin-bottom: 5%;
 }
-.skills-card{
-    margin-top: 4%;
-        display: flex;
-    /* flex-direction: column; */
+
+.skills-card {
+    /* margin-top: 4%; */
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: 'Inconsolata', monospace;
+    width: 80%;
+    /* padding: 128; */
+    /* border: 3px solid #e0b8ff;
+    border-radius: 10px; */
+    /* box-shadow: 1px 3px 5px 0px rgba(130,130,130,0.75);
+    -webkit-box-shadow: 1px 3px 5px 0px rgba(130,130,130,0.75);
+    -moz-box-shadow: 1px 3px 5px 0px rgba(130,130,130,0.75); */
 }
 
-.skills-card :first-child{
+.skill-icons {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    height: 140px;
+}
 
+
+
+.skills-title {
+    display: flex;
+    font-family: 'Inconsolata', monospace;
+    /* font-family: 'Bebas Neue', cursive; */
     text-transform: uppercase;
-    font-size: 40px;
-    margin-right: 2%;
+    background-color: rgb(192, 175, 255);
+    padding: 5px;
+    border-radius: 10px;
+    color: rgb(82, 76, 136);
+    font-size: 20px;
+    width: 30%;
+    justify-content: center;
+
 }
- 
+
+.icon-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background-color: rgb(192, 175, 255);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+.icon-cont {
+    transition: all 0.3s ease-in-out;
+}
+
+
+.icon-cont:hover .icon-title {
+    /* opacity: 1; */
+    height: 18px;
+}
+
+
+.icon-cont:hover {
+    /* opacity: 1; */
+    transform: scale(1.06);
+}
+
+.img-cont {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin-bottom: 4px;
+}
+
+.img-cont img {
+    width: 100%;
+    height: 100%;
+}
+
+.skills-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(248, 238, 255); */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 3px 5px 0px rgba(130,130,130,0.75);
+  -webkit-box-shadow: 1px 3px 5px 0px rgba(130,130,130,0.75);
+  -moz-box-shadow: 1px 3px 5px 0px rgba(130,130,130,0.75);
+}
