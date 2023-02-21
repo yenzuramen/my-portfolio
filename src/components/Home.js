@@ -2,6 +2,7 @@ import React from 'react'
 import me from '../assets/images/me.PNG'
 import { FiArrowUpRight } from "react-icons/fi";
 import { Skills } from './Skills';
+import { Projects } from './Projects';
 
 
 export const Home = () => {
@@ -26,14 +27,17 @@ export const Home = () => {
 
       </div>
       <div className='cont-skills'>
-
         <div className='skills-tools'>
           <div className="skills-tools-title">SKILLS + TOOLS </div>
           <div className="skills-tools-txt">  These are some of my skills + tools I use :)</div>
         </div>
         <Skills />
-
-
+      </div>
+{/* <hr/> */}
+      <div className='cont-projects'>
+        <div className="projects-title">PROJECTS </div>
+        <div className="projects-txt">  These some are projects I've done ^^ </div>
+        <Projects />
       </div>
 
 

@@ -16,7 +16,10 @@ export const Navbar = () => {
                     <NavLink name='home-link' to='/home'>Home</NavLink>
                 </li>
                 <li className={activeItem !== 'skills-projects-link' ? '' : 'active-shadow'} onClick={handleNavClick}>
-                    <NavLink name='skills-projects-link' to='/skills-projects'>Skills and Projects</NavLink>
+                    <NavLink name='skills-projects-link' to='/skills'>Skills</NavLink>
+                </li>
+                <li className={activeItem !== 'skills-link' ? '' : 'active-shadow'} onClick={handleNavClick}>
+                    <NavLink name='projects-link' to='/projects'>Projects</NavLink>
                 </li>
                 <li className={activeItem !== 'about-me-link' ? '' : 'active-shadow'} onClick={handleNavClick}>
                     <NavLink name='about-me-link' to='/about-me'>About me </NavLink>
