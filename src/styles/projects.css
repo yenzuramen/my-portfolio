@@ -36,7 +36,7 @@
     box-shadow: 0px 1px 5px 0px rgba(150, 150, 150, 0.75);
     -webkit-box-shadow: 0px 1px 5px 0px rgba(150, 150, 150, 0.75);
     -moz-box-shadow: 0px 1px 5px 0px rgba(150, 150, 150, 0.75);
-  
+
 }
 
 .project-img img {
@@ -51,17 +51,17 @@
 
 }
 
-.project-card-title{
+.project-card-title {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
     background-color: rgb(192, 175, 255);
-    color:rgb(82, 76, 136);
+    color: rgb(82, 76, 136);
     padding: 5px;
     border-radius: 10px;
 }
 
-.project-desc-text{
+.project-desc-text {
     /* background-color: rgb(205, 188, 222); */
     padding: 5px;
     border-radius: 10px;
@@ -69,37 +69,99 @@
     /* border:1px solid #d0c5e4 */
 }
 
-.project-skills{
+.project-skills {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.react-skill{
+
+.react-skill {
     background-color: rgb(137, 207, 247);
     color: rgb(53, 36, 106);
     padding: 5px;
     border-radius: 10px;
-   /* width: 30%; */
+    /* width: 30%; */
 }
-.js-skill{
-    background-color: rgb(235, 218, 109);
+
+.js-skill {
+    background-color: rgb(248, 230, 115);
     color: rgb(158, 105, 5);
     padding: 5px;
     border-radius: 10px;
-   /* width: 30%; */
+    /* width: 30%; */
 }
-.node-skill{
+
+.node-skill {
     background-color: rgb(150, 225, 123);
     color: rgb(14, 66, 8);
     padding: 5px;
     border-radius: 10px;
-   /* width: 30%; */
+    /* width: 30%; */
 }
 
-.mongo-skill{
+.mongo-skill {
     background-color: rgb(127, 216, 197);
     color: rgb(14, 66, 8);
     padding: 5px;
     border-radius: 10px;
-   /* width: 30%; */
+    /* width: 30%; */
+}
+
+.html-skill {
+    background-color: rgb(250, 202, 130);
+    color: rgb(66, 36, 8);
+    padding: 5px;
+    border-radius: 10px;
+    /* width: 30%; */
+}
+
+.css-skill {
+    background-color: rgb(130, 192, 250);
+    color: rgb(15, 66, 161);
+    padding: 5px;
+    border-radius: 10px;
+    /* width: 30%; */
+}
+
+.jq-skill {
+    background-color: rgb(250, 232, 130);
+    color: rgb(161, 56, 15);
+    padding: 5px;
+    border-radius: 10px;
+    /* width: 30%; */
+}
+
+.php-skill {
+    background-color: rgb(153, 154, 255);
+    color: rgb(45, 21, 110);
+    padding: 5px;
+    border-radius: 10px;
+    /* width: 30%; */
+}
+
+.swipe-project-cont {
+    display: flex;
+}
+
+.swipe-btn-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swipe-btn {
+    padding: 10px;
+    border: 3px solid rgb(192, 175, 255);
+    background-color: white;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.swipe-btn:hover {
+    /* background-color: rgb(63, 53, 100); */
+    /* border: 3px solid rgb(116, 103, 167);; */
+    transform: scale(1.2);
+    background-color: rgb(225, 218, 255);
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { IconContext } from "react-icons";
+
 import { SkillItems } from '../jsons/Skills'
 
 

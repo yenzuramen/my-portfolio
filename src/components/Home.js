@@ -3,6 +3,7 @@ import me from '../assets/images/me.PNG'
 import { FiArrowUpRight } from "react-icons/fi";
 import { Skills } from './Skills';
 import { Projects } from './Projects';
+import { About } from './About';
 
 
 export const Home = () => {
@@ -33,11 +34,15 @@ export const Home = () => {
         </div>
         <Skills />
       </div>
-{/* <hr/> */}
+      {/* <hr/> */}
       <div className='cont-projects'>
         <div className="projects-title">PROJECTS </div>
         <div className="projects-txt">  These some are projects I've done ^^ </div>
         <Projects />
+      </div>
+      <div className='cont-projects'>
+        <div className="projects-title">A BIT ABOUT ME :) </div>
+        <About />
       </div>
 
 
