@@ -1,7 +1,7 @@
 import React from 'react'
 import me from '../assets/images/me.PNG'
 import { AiOutlinePaperClip } from "react-icons/ai";
-import { MdOutlineFileDownload, MdEmail } from "react-icons/md";
+import { MdOutlineFileDownload } from "react-icons/md";
 import { BsLinkedin } from "react-icons/bs";
 import { Skills } from './Skills';
 import { Projects } from './Projects';
@@ -9,7 +9,7 @@ import { About } from './About';
 import { Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { motion, useAnimation } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { Footer } from './layout/Footer';
 
 export const Home = () => {
@@ -43,7 +43,7 @@ export const Home = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ type: 'spring', stiffness: 40, delay: 0.6 }}
             className='secnd-cont'>
-            I'm currently looking for a jr dev position, eager to grow and bring valuable solitions to any position ^^
+            I'm currently looking for a job as a jr web developer, eager to grow and bring valuable solitions to any position ^^
           </motion.div>
 
           <div className='contact-cont'>
@@ -80,7 +80,7 @@ export const Home = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ type: 'spring', stiffness: 30, delay: 1 }}
           className='cont-image'>
-          <img className='self-img' src={me} />
+          <img className='self-img' src={me}  alt='me'/>
         </motion.div>
 
       </div>

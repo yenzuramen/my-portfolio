@@ -283,3 +283,31 @@ footer{
   color: #c7b8e4;
 }
 
+@media (max-width: 900px) {
+
+  .container {
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .cont-title {
+    padding-left: 5% ;
+    padding-right: 5%;
+    width: 100%;
+
+  }
+
+  .cont-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    margin-top: 5%;
+    /* align-items: center; */
+  }
+  
+
+}

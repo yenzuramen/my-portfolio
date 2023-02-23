@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { IconContext } from "react-icons";
 import { ProjectItems } from '../jsons/Projects'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
-import { motion, useAnimation } from 'framer-motion'
-import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion'
 
 export const Projects = () => {
 
@@ -16,7 +14,7 @@ export const Projects = () => {
     if (newIndex < 0) {
       newIndex = ProjectItems.length - 1
     }
-    setXAnimation('-100vh')
+    setXAnimation('-100vw')
     setProjectIndex(newIndex)
   }
 
@@ -25,7 +23,7 @@ export const Projects = () => {
     if (newIndex > (ProjectItems.length - 1)) {
       newIndex = 0
     }
-    setXAnimation('100vh')
+    setXAnimation('10vw')
     setProjectIndex(newIndex)
   }
 
@@ -46,7 +44,7 @@ export const Projects = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ type: 'spring', stiffness: 50, duration: 1 }}>
 
-          <div className='project-img'><img src={currentProject.image} /></div>
+          <div className='project-img'><img src={currentProject.image} alt={currentProject.title} /></div>
           <div className='project-desc'>
             <div className='project-card-title'>{currentProject.title}</div>
             <p className='project-desc-text'>{currentProject.desc}</p>

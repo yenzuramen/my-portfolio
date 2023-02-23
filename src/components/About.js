@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { HiStar } from "react-icons/hi";
-import { motion, useAnimation } from 'framer-motion'
-import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion'
+// import { useInView } from 'react-intersection-observer';
 import { Favorites } from '../jsons/Favorites';
 export const About = () => {
 
@@ -20,7 +20,7 @@ export const About = () => {
             transition: { type: 'spring', duration: 0.6 },
           }}
           className='about-me-header'>
-          <img src='./assets/about-me-images/head2.png' />
+          <img src='./assets/about-me-images/head2.png' alt='me!' />
         </motion.div>
 
         <motion.div
@@ -55,7 +55,7 @@ export const About = () => {
                   {fav.title}
                 </div>
                 <div className='fav-img'>
-                  <img src={fav.img} />
+                  <img src={fav.img} alt={fav.hover_desc} />
                   <div className='overlay-fav'>
                     {fav.hover_desc}
                   </div>

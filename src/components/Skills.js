@@ -1,6 +1,6 @@
 import React from 'react'
 import { SkillItems } from '../jsons/Skills'
-import { motion, useAnimation } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 export const Skills = () => {
   return (<>
@@ -29,7 +29,7 @@ export const Skills = () => {
             return (
               <div className='icon-cont' key={key}>
                 <div className='img-cont'>
-                  <img className='icon-img' src={icon.url} />
+                  <img className='icon-img' src={icon.url} alt={icon.title} />
                 </div>
                 <div className='icon-title'>
                   {icon.title}

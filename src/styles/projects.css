@@ -168,6 +168,26 @@
     background-color: rgb(225, 218, 255);
 }
 
-.btn-carusel{
+.btn-carusel {
     gap: 10px;
+}
+
+
+@media (max-width: 900px) {
+    .project-card {
+        flex-direction: column;
+
+    }
+
+    .project-desc {
+        margin-top: 3%;
+        width: 90%;
+    }
+
+    .project-img {
+
+        width: 90%;
+
+
+    }
 }
