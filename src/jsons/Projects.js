@@ -4,7 +4,7 @@ export const ProjectItems = [{
     desc: 'This is project has all the basic functions of a social media,' +
         'signing up, loging in using JWT, following and unfollowing other users aswell as making your own posts.',
     url: '',
-    image: '',
+    image: './assets/project-images/react-social.PNG',
     skills: [{
         name: 'React',
         class: 'react-skill'
@@ -42,7 +42,7 @@ export const ProjectItems = [{
     title: 'SPA LANDING PAGE',
     desc: 'This is a simple landing page spa-style, it uses the whatsapp api in the contact section on the footer.',
     url: '',
-    image: '',
+    image: './assets/project-images/spa-landing.PNG',
     skills: [{
         name: 'Javascript',
         class: 'js-skill'
@@ -62,7 +62,7 @@ export const ProjectItems = [{
     desc: 'During my intership in CFE I was in charge of making a file management system from scratch,'+
     'this system supported search and lending requests of documents, it had admin and public user distinction.',
     url: '',
-    image: '',
+    image: './assets/project-images/scat.PNG',
     skills: [{
         name: 'Javascript',
         class: 'js-skill'

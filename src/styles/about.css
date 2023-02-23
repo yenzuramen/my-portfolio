@@ -1,0 +1,131 @@
+.cont-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.about-me-cont {
+    width: 70%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Inconsolata', monospace;
+}
+
+.about-me-header {
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+    width: 560px;
+    border-radius: 10px;
+}
+
+.about-me-header img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.overlay-header {
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    backdrop-filter: blur(15px);
+    width: 30%;
+    /* changed from 200px */
+    height: 100%;
+    top: 0;
+    right: 0;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    /* font-weight: 600; */
+    /* z-index: 1; added z-index */
+
+}
+
+.about-me-text {
+    padding: 20px;
+    width: 53%;
+}
+
+.favs-cont {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+
+}
+
+.fav-img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+.fav-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 1s;
+    /* border-radius: 10px; */
+}
+
+.overlay-fav {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    transition: all 0.5s;
+    height: 0%;
+    overflow: hidden;
+    /* font-weight: 600; */
+    color: white;
+    text-shadow: 1px;
+    /* font-size: 0px; */
+    /* padding: 10px; */
+
+    text-shadow: 5px 5px 8px #000000;
+
+}
+
+.fav-img:hover .overlay-fav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 17px;
+    /* border-radius: 10px; */
+}
+
+.fav-img:hover img {
+    transform: scale(1.8);
+
+}
+
+.fav-txt {
+    padding: 5px;
+    background-color: rgb(249, 228, 109);
+    border-radius: 10px;
+    color: rgb(149, 86, 9);
+}
+
+.fav-title {
+    padding: 5px;
+    border: 2px solid #e3e3fd;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
