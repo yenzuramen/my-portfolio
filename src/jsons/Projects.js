@@ -20,10 +20,10 @@ export const ProjectItems = [{
     }]
 },
 {
-    title: 'BLOG',
+    title: 'BLOG MADE WITH MERN',
     desc: 'This is a blog made with MERN which has all the typical CRUD functions, it also lets you consult the details of each individual post.',
     url: '',
-    image: '',
+    image: './assets/project-images/blog.PNG',
     skills: [{
         name: 'React',
         class: 'react-skill'

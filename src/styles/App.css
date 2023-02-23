@@ -242,6 +242,10 @@
 .contact-cont {
   display: flex;
 }
+.contact-link a {
+
+  text-decoration: none;
+}
 
 .contact-link {
   padding: 10px;
@@ -267,3 +271,15 @@
   color: #432e6d;
   transform: scale(1.03);
 }
+
+footer{
+ 
+}
+
+.footer-txt{ height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c7b8e4;
+}
+

@@ -35,9 +35,11 @@ export const Projects = () => {
 
   return (
     <>
+      <div className="projects-title">PROJECTS </div>
       <motion.div initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }} transition={{duration:1}} className="projects-title">PROJECTS </motion.div>
-      <div className="projects-txt">  These some are projects I've done ^^ </div>
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="projects-txt">  These some are projects I've done ^^ </motion.div>
       <div className='swipe-btn-cont'>
         <motion.div className='project-card' key={currentProject.title}
           initial={{ opacity: 0, x: xAnimation }}
