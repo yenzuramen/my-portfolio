@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ProjectItems } from '../jsons/Projects'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { FaLink, FaGithub } from 'react-icons/fa';
 import { motion } from 'framer-motion'
 
 export const Projects = () => {
@@ -31,6 +32,11 @@ export const Projects = () => {
     setCurrentProject(ProjectItems[projectIndex])
   }, [projectIndex])
 
+
+  const goToPage = (url) => {
+    window.open(url, '_blank')
+  }
+
   return (
     <>
       <div className="projects-title">PROJECTS </div>
@@ -39,15 +45,31 @@ export const Projects = () => {
         transition={{ duration: 1 }}
         className="projects-txt">  These some are projects I've done ^^ </motion.div>
       <motion.div className='swipe-btn-cont'
-        initial={{ opacity: 0 , y:'10vh'}}
-        whileInView={{ opacity: 1,y :0}}
-        transition={{ type:'spring', duration: 1 }}>
+        initial={{ opacity: 0, y: '10vh' }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ type: 'spring', duration: 1 }}>
         <motion.div className='project-card' key={currentProject.title}
           initial={{ opacity: 0, x: xAnimation }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ type: 'spring', stiffness: 50, duration: 1 }}>
 
-          <div className='project-img'><img src={currentProject.image} alt={currentProject.title} /></div>
+          <div className='project-img'>
+            <img src={currentProject.image} alt={currentProject.title} />
+
+            {currentProject.url &&
+              (<div className='url-cont' onClick={() => { goToPage(currentProject.url) }}>
+                <FaLink />
+              </div>
+              )
+            }
+
+            {currentProject.github &&
+              (<div className='git-cont' onClick={() => { goToPage(currentProject.github) }}>
+                <FaGithub />
+              </div>)
+            }
+
+          </div>
           <div className='project-desc'>
             <div className='project-card-title'>{currentProject.title}</div>
             <p className='project-desc-text'>{currentProject.desc}</p>
@@ -57,7 +79,6 @@ export const Projects = () => {
                   <div key={key} className={skill.class}>
                     {skill.name}
                   </div>)
-
               })}
 
             </div>
@@ -70,7 +91,9 @@ export const Projects = () => {
         <button onClick={swipeLeft} className='swipe-btn'>
           <FiChevronLeft /> Previous
         </button>
-        <button onClick={swipeRight} className='swipe-btn'> Next <FiChevronRight /></button>
+        <button onClick={swipeRight} className='swipe-btn'>
+          Next <FiChevronRight />
+        </button>
       </div>
       <br />
     </>
