@@ -46,16 +46,7 @@
     height: 100%;
 }
 
-urls-cont{
-    position: absolute;
-    bottom:0;
-    right:0;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .url-cont{
     position: absolute;
@@ -220,7 +211,14 @@ urls-cont{
     gap: 10px;
 }
 
-
+.warn-cont{
+    /* margin-top: 3px; */
+    margin-bottom: 5px;
+    padding: 3px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+    color: rgb(138, 138, 138);
+}
 @media (max-width: 900px) {
     .project-card {
         flex-direction: column;
@@ -240,10 +238,3 @@ urls-cont{
     }
 }
 
-.warn-cont{
-    margin-top: 3px;
-    padding: 3px;
-    background-color: rgb(230, 230, 230);
-    border-radius: 10px;
-    color: rgb(138, 138, 138);
-}

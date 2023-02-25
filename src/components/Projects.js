@@ -73,9 +73,10 @@ export const Projects = () => {
           </div>
           <div className='project-desc'>
             <div className='project-card-title'>{currentProject.title}</div>
-            <p className='project-desc-text'>{currentProject.desc}
-            {currentProject.github &&   <div className='warn-cont'> Image uploading may not work due to host limitations :c</div>}
-            </p>
+            <div className='project-desc-text'><p>{currentProject.desc}</p>
+              {currentProject.github &&
+                <div className='warn-cont'> Image uploading may not work due to host limitations :c</div>}
+            </div>
             <div className='project-skills'>
               {currentProject.skills.map((skill, key) => {
                 return (
