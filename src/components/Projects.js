@@ -43,7 +43,8 @@ export const Projects = () => {
       <motion.div initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="projects-txt">  These some are projects I've done ^^ </motion.div>
+        className="projects-txt">  These some are projects I've done ^^
+      </motion.div>
       <motion.div className='swipe-btn-cont'
         initial={{ opacity: 0, y: '10vh' }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -72,7 +73,9 @@ export const Projects = () => {
           </div>
           <div className='project-desc'>
             <div className='project-card-title'>{currentProject.title}</div>
-            <p className='project-desc-text'>{currentProject.desc}</p>
+            <p className='project-desc-text'>{currentProject.desc}
+            {currentProject.github &&   <div className='warn-cont'> Image uploading may not work due to host limitations :c</div>}
+            </p>
             <div className='project-skills'>
               {currentProject.skills.map((skill, key) => {
                 return (
