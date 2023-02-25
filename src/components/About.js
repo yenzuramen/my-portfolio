@@ -20,7 +20,7 @@ export const About = () => {
             transition: { type: 'spring', duration: 0.6 },
           }}
           className='about-me-header'>
-          <img src='./assets/about-me-images/head2.png' alt='me!' />
+          <img src='./assets/about-me-images/headabout.png' alt='me!' />
         </motion.div>
 
         <motion.div
