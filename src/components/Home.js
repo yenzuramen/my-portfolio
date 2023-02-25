@@ -20,7 +20,7 @@ export const Home = () => {
   }
 
   const downloadCV = () => {
-    const cvURL = 'https://drive.google.com/file/d/1h4UYp8RGfleX9Vagw-IteOzICX1Twc2B/view?usp=share_link'
+    const cvURL = 'https://drive.google.com/file/d/1pTphGFZqK20Qk8eizhMt73MNfQvr6qR6/view?usp=sharing'
     window.open(cvURL, '_blank')
   }
 
