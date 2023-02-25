@@ -45,7 +45,7 @@ export const Home = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ type: 'spring', stiffness: 40, delay: 0.3 }}
             className='presnt-text '>
-            I'm a bilingual computer systems engineer with a focus on fullstack web development!
+            I'm a fullstack web developer with a focus on front-end development!
           </motion.div>
 
           <motion.div
