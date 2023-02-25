@@ -22,7 +22,7 @@ export const Skills = () => {
           <span>{skill.title}</span>
         </motion.div>
         <motion.div className='skill-icons'
-          initial={{ opacity: 0, x: '10vw' }}
+          initial={{ opacity: 0, x: '10vw' }} //here
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ type: 'spring', stiffness: 50}}>
           {skill.icons.map((icon, key) => {

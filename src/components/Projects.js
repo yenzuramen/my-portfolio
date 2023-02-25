@@ -23,7 +23,7 @@ export const Projects = () => {
     if (newIndex > (ProjectItems.length - 1)) {
       newIndex = 0
     }
-    setXAnimation('10vw')
+    setXAnimation('100vw')
     setProjectIndex(newIndex)
   }
 
@@ -38,7 +38,10 @@ export const Projects = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
         className="projects-txt">  These some are projects I've done ^^ </motion.div>
-      <div className='swipe-btn-cont'>
+      <motion.div className='swipe-btn-cont'
+        initial={{ opacity: 0 , y:'10vh'}}
+        whileInView={{ opacity: 1,y :0}}
+        transition={{ type:'spring', duration: 1 }}>
         <motion.div className='project-card' key={currentProject.title}
           initial={{ opacity: 0, x: xAnimation }}
           animate={{ opacity: 1, x: 0 }}
@@ -62,7 +65,7 @@ export const Projects = () => {
         </motion.div>
 
 
-      </div>
+      </motion.div>
       <div className='btn-carusel'>
         <button onClick={swipeLeft} className='swipe-btn'>
           <FiChevronLeft /> Previous

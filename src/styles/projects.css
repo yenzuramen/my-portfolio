@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    overflow: hidden;
 }
 
 .projects-title {
@@ -141,12 +142,14 @@
 
 .swipe-project-cont {
     display: flex;
+    overflow: hidden;
 }
 
 .swipe-btn-cont {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .swipe-btn {

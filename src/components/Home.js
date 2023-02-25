@@ -19,36 +19,46 @@ export const Home = () => {
     toast("Copied to clipboard!");
   }
 
+  const downloadCV = () => {
+    const cvURL = 'https://drive.google.com/file/d/1h4UYp8RGfleX9Vagw-IteOzICX1Twc2B/view?usp=share_link'
+    window.open(cvURL, '_blank')
+  }
+
   return (
     <div className='main-home'>
-      <div className='container'>
+      <div className='container' id='home'>
         <div className='cont-title'>
-          <div className='hi-text'>Hi! <strong className='name'>I'm Yen (^^)/ </strong> </div>
+          <motion.div
+            initial={{ opacity: 0, y: '-100' }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ type: 'spring', stiffness: 90, delay: 0.5 }}
+            className='hi-text'>Hi! <strong className='name'>I'm Yen (^^)/ </strong>
+          </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: '-10vw' }}
+            initial={{ opacity: 0, x: '-100' }}
             whileInView={{ opacity: 1, x: 0 }} transition={{ type: 'spring', stiffness: 40, delay: 0 }}
             className='web-dev'>FULL-STACK WEB DEVELOPER</motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: '-10vw' }}
+            initial={{ opacity: 0, x: '-100' }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ type: 'spring', stiffness: 40, delay: 0.3 }}
-            className='presnt-text frosted-glass'>
+            className='presnt-text '>
             I'm a bilingual computer systems engineer with a focus on fullstack web development!
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: '-10vw' }}
+            initial={{ opacity: 0, x: '-100' }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ type: 'spring', stiffness: 40, delay: 0.6 }}
             className='secnd-cont'>
-            I'm currently looking for a job as a jr web developer, eager to grow and bring valuable solitions to any position ^^
+            I'm currently looking for a job as a jr web developer, eager to grow and bring valuable solutions to any position ^^
           </motion.div>
 
           <div className='contact-cont'>
             <motion.div
-              initial={{ opacity: 0, x: '-10vw' }}
+              initial={{ opacity: 0, x: '-100' }}
               whileInView={{ opacity: 1, x: 0, transition: { type: 'spring', stiffness: 80, delay: 1.2 } }}
               whileHover={{
                 scale: 1.03,
@@ -61,14 +71,14 @@ export const Home = () => {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, x: '-10vw' }}
+              initial={{ opacity: 0, x: '-100' }}
               whileInView={{ opacity: 1, x: 0, transition: { type: 'spring', stiffness: 80, delay: 0.9 } }}
               whileHover={{
                 scale: 1.03,
                 transition: { duration: 0.1 },
               }}
               className='contact-link'
-              onClick={copyEmail}>
+              onClick={copyEmail} id='aboutMe' >
               yengarciamun@gmail.com  <AiOutlinePaperClip />
             </motion.div>
             <ToastContainer />
@@ -76,11 +86,15 @@ export const Home = () => {
 
         </div>
         <motion.div
-          initial={{ opacity: 0, y: '-20vh' }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ type: 'spring', stiffness: 30, delay: 1 }}
+          initial={{ opacity: 0, y: '-100' }}
+          whileInView={{ opacity: 1, y: 0, transition: { type: 'spring', stiffness: 90, delay: 1 } }}
+          // transition={{  }}
+          // whileHover={{
+          //   scale: 1.03,
+          //   transition: { type: 'spring', duration: 0.3 },
+          // }}
           className='cont-image'>
-          <img className='self-img' src={me}  alt='me'/>
+          <img className='self-img' src={me} alt='me' />
         </motion.div>
 
       </div>
@@ -88,16 +102,16 @@ export const Home = () => {
         <About />
       </div>
 
-      <div className='cont-skills'>
+      <div className='cont-skills' id='skills'>
         <Skills />
       </div>
       {/* <hr/> */}
-      <div className='cont-projects'>
+      <div className='cont-projects' id='projects'>
         <Projects />
       </div>
 
-      <div className='resume-btn'>My Resume (CV) <MdOutlineFileDownload /></div>
-     
+      <div className='resume-btn' onClick={downloadCV}>My Resume (CV) <MdOutlineFileDownload /></div>
+
       <Footer />
     </div>
   )

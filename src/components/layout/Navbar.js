@@ -13,17 +13,18 @@ export const Navbar = () => {
         <div className='div-nav'>
             <ul className='nav-menu'>
                 <li className={activeItem !== 'home-link' ? '' : 'active-shadow'} onClick={handleNavClick}>
-                    <NavLink name='home-link' to='/home'>Home</NavLink>
-                </li>
-                <li className={activeItem !== 'skills-projects-link' ? '' : 'active-shadow'} onClick={handleNavClick}>
-                    <NavLink name='skills-projects-link' to='/skills'>Skills</NavLink>
-                </li>
-                <li className={activeItem !== 'skills-link' ? '' : 'active-shadow'} onClick={handleNavClick}>
-                    <NavLink name='projects-link' to='/projects'>Projects</NavLink>
+                    <a name='home-link' href='#home'>Home</a>
                 </li>
                 <li className={activeItem !== 'about-me-link' ? '' : 'active-shadow'} onClick={handleNavClick}>
-                    <NavLink name='about-me-link' to='/about-me'>About me </NavLink>
+                    <a name='about-me-link' href='#aboutMe'>About me </a>
                 </li>
+                <li className={activeItem !== 'skills-projects-link' ? '' : 'active-shadow'} onClick={handleNavClick}>
+                    <a name='skills-projects-link' href='#skills'>Skills</a>
+                </li>
+                <li className={activeItem !== 'skills-link' ? '' : 'active-shadow'} onClick={handleNavClick}>
+                    <a name='projects-link' href='#projects'>Projects</a>
+                </li>
+
 
             </ul>
         </div>

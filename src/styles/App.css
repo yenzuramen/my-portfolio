@@ -1,10 +1,20 @@
+html,
+body {
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
+}
+
+/* body {
+  position: relative;
+} */
+
 .nav-div {
   height: 10vh;
 }
 
 .main-home {
   height: 80vh;
-
+  /* overflow-x: hidden; */
 }
 
 .container {
@@ -102,6 +112,7 @@
   z-index: 100;
   top: 0;
   width: 100%;
+  /* overflow: hidden; */
   /* set a z-index to ensure the navbar stays on top of other elements */
 }
 
@@ -135,7 +146,7 @@
   font-family: 'Inconsolata', monospace;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.2rem;
   transition: all 0.4s linear;
   backdrop-filter: blur(15px) !important;
   padding: 15px;
@@ -285,15 +296,27 @@ footer{
 
 @media (max-width: 900px) {
 
+  .hi-text {
+    font-size: 50px;
+  }
+  
+  .web-dev {
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+  }
+
+  .presnt-text{
+    font-size: 30px;}
+
   .container {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   padding: 20px !important;
   }
 
   .cont-title {
-    padding-left: 5% ;
-    padding-right: 5%;
+  padding: 0% !important;
     width: 100%;
 
   }
@@ -304,7 +327,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 5%;
+    padding-left: 0% !important;
     margin-top: 5%;
     /* align-items: center; */
   }

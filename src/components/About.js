@@ -13,7 +13,7 @@ export const About = () => {
         <div className="projects-title">A BIT ABOUT ME :) </div>
 
         <motion.div
-          initial={{ opacity: 0, x: '2vw' }}
+          initial={{ opacity: 0, x: '10vw' }} //here
           whileInView={{ opacity: 1, x: 0, transition: { type: 'spring', stiffness: 40, delay: 0 } }}
           whileHover={{
             scale: 1.03,
@@ -28,13 +28,13 @@ export const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ type: 'spring', stiffness: 40, delay: 0 }}
           className='about-me-text' >
-          I'm a 23 yo software developer,
+          I'm Yeneli Garcia! a 23 yo software developer,
           I consider dedication and a feeling of responsibility a core part of my personality.
           Always looking forward to improve and eager to learn new things ^^!
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: '2vw' }}
+          initial={{ opacity: 0, x: '10vw' }}//here
           whileInView={{ opacity: 1, x: 0, transition: { type: 'spring', stiffness: 40, delay: 0 } }}
           whileHover={{
             scale: 1.03,
