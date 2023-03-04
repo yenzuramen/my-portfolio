@@ -53,7 +53,7 @@ export const Home = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ type: 'spring', stiffness: 40, delay: 0.6 }}
             className='secnd-cont'>
-            I'm currently looking for a job opportunity as a jr web developer, eager to grow and bring valuable solutions ^^
+            I'm currently looking for a job opportunity as a web developer, eager to grow and bring valuable solutions ^^
           </motion.div>
 
           <div className='contact-cont'>
