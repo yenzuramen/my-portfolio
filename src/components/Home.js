@@ -1,5 +1,5 @@
 import React from 'react'
-import me from '../assets/images/me.PNG'
+import me from '../assets/images/me.png'
 import { AiOutlinePaperClip } from "react-icons/ai";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { BsLinkedin } from "react-icons/bs";
